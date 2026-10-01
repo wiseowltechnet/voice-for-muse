@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Voice for Muse — data disclosure</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f6f4ee; color: #222; margin: 0; padding: 40px 16px; }
+  main { max-width: 620px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+  h1 { font-size: 22px; margin-top: 0; }
+  li { margin-bottom: 12px; line-height: 1.5; }
+  .actions { margin-top: 24px; display: flex; gap: 12px; }
+  button { font-size: 15px; padding: 10px 20px; border-radius: 8px; cursor: pointer; border: 1px solid #ccc; background: #fff; }
+  #agree { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🎙 Voice for Muse — what it does with your data</h1>
+  <p>Before first use, here's exactly what happens when you talk to Muse:</p>
+  <ul>
+    <li><b>Your voice audio.</b> Captured only while the mic is listening — you start it with the mic button or <kbd>Alt+M</kbd>, and it stops on its own after each phrase. The audio is transcribed by your browser's built-in speech recognition. In Chrome/Edge that means it's sent to Google's speech servers for transcription (the same service behind voice search); in Safari it's Apple's servers. The extension itself stores no audio, makes no network requests of its own, and has no servers.</li>
+    <li><b>Muse's replies.</b> The extension reads the reply text shown on the page so it can read it aloud to you. That text is never stored or sent anywhere by the extension.</li>
+    <li><b>Your settings.</b> Voice choice, rate, pitch, and toggles are saved only in your browser's local storage. Nothing leaves your device.</li>
+  </ul>
+  <p>No analytics, no tracking, no accounts.</p>
+  <div class="actions">
+    <button id="agree">I understand and agree</button>
+    <button id="later">Not now</button>
+  </div>
+</main>
+<script src="consent.js"></script>
+</body>
+</html>
