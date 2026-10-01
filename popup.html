@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><style>
+body { width: 280px; font: 14px/1.5 system-ui, sans-serif; padding: 14px 16px; margin: 0; color: #222; }
+h1 { font-size: 16px; margin: 0 0 10px; }
+.row { display: flex; align-items: center; justify-content: space-between; margin: 10px 0; }
+label { font-weight: 600; }
+select { max-width: 170px; }
+input[type=range] { width: 130px; }
+.hint { font-size: 12px; color: #666; margin-top: 12px; }
+button.test { margin-top: 8px; }
+</style></head>
+<body>
+<h1>🔊 Voice for Muse</h1>
+<div class="row"><label>Speak replies aloud</label><input type="checkbox" id="autoSpeak"></div>
+<div class="row"><label>Auto-send after dictation</label><input type="checkbox" id="autoSend"></div>
+<div class="row"><label>Voice</label><select id="voice"></select></div>
+<div class="row"><label>Rate</label><input type="range" id="rate" min="0.5" max="2" step="0.1"></div>
+<div class="row"><label>Pitch</label><input type="range" id="pitch" min="0.5" max="2" step="0.1"></div>
+<button class="test" id="testBtn">Test voice</button>
+<p class="hint">Tip: press <b>Alt+M</b> anywhere in chat to toggle the mic. Click the mic while I'm talking to interrupt me.</p>
+<script src="popup.js"></script>
+</body>
+</html>
