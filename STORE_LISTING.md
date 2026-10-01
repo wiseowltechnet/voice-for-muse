@@ -60,8 +60,10 @@ Drew (only you can do these):
       https://chrome.google.com/webstore/devconsole (sign in with your Google account)
 - [ ] Create the GitHub repo under your wiseowltech.net GitHub account and push
       `~/workspace/edison-voice-extension/` (this also gives you a home for PRIVACY.md)
-- [ ] Take 1–5 screenshots (1280x800 or 640x400): the mic button on the chat,
-      the toolbar popup with settings, a spoken reply in progress
+- [ ] Take 1–5 screenshots (1280x800 or 640x400)
+      - [x] Toolbar popup: `store-assets/screenshot-popup-1280x800.png` (done, clean)
+      - [ ] The mic button on the chat (needs your logged-in browser — see spec below)
+      - [ ] A spoken reply in progress (same)
 - [x] 440x280 promo tile built: `store-assets/promo-tile-440x280.png` (copy in `~/workspace/your_files/` too) — tweak the wording/style if you like
 - [ ] In the Developer Dashboard: New item → upload the zip → paste the copy above →
       upload icon/tile/screenshots → privacy tab → submit for review
